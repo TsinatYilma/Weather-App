@@ -666,6 +666,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -852,6 +856,16 @@ video {
   font-size: 12px;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -958,6 +972,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -981,6 +999,11 @@ video {
   .md\:border-purp {
     --tw-border-opacity: 1;
     border-color: rgb(91 100 102 / var(--tw-border-opacity, 1));
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:backdrop-blur-\[20px\] {
