@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bor-white{
+    border: 2px solid white;
+}
+.bor-black{
+    border: 1px solid black;
+}

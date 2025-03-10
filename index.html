@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="icon" type="image/jfif" sizes="32x32" href="images\icons\download.jfif" class="rounded-full">
+    <title>Weather-BOY</title>
+</head>
+<body class="relative bg-cover object-contain bg-no-repeat bg-fixed bg-center text-white bor-black">
+    <div class=" hidden w-full min-h-full absolute backdrop-blur-[90px] md:block">
+            
+    </div>
+    <div class="relative md:border-[6px] md:border-purp md:m-10  rounded md:flex">
+
+        <div class="bgimg hidden  w-full min-h-full absolute bg-cover object-contain bg-no-repeat bg-fixed bg-center md:block">
+            
+        </div>
+        <div class="lefty grow z-50 hidden  md:flex pl-5 pr-5  relative">
+                <div class="dateTime mr-3 md:block absolute right-0 top-0">
+                    <p class="datetime ml-auto "></p>
+                </div>
+                <div class="bottommy mt-auto  w-full h-[260px] flex flex-col justify-between">
+                    <div class="weatherCondition flex border-b border-purp w-full justify-end" >
+                        <h1 class="weatherheader text-6xl  ml-auto mb-4"></h1>
+                    </div>
+                    <div class="nexthour  h-[150px] flex justify-start mb-4  gap-5 items-end overflow-x-auto absolute left-4 right-4 bottom-0 bg-gradient-to-t from-[rgba(0,0,0,0.2)] to-transparent">
+                         <div class="hour-0 h-[145px] min-w-[80px] rounded backdrop-blur-[10px] hidden flex-col justify-center items-center gap-2 hover:border hover:border-purp">
+                            <p class="hourtime-0 border-b"></p>
+                            <img class="hourimg-0" src="" alt="" width="50" height="30">
+                            <h1 class="hourtemp-0 font-bold"></h1>
+                         </div>
+                         <div class="hour-1 h-[145px] min-w-[80px] rounded backdrop-blur-[10px] hidden flex-col justify-center items-center gap-2 hover:border hover:border-purp">
+                            <p class="hourtime-1 border-b"></p>
+                            <img class="hourimg-1" src="" alt="" width="50" height="30">
+                            <h1 class="hourtemp-1 font-bold"></h1>
+                         </div>
+                         <div class="hour-2 h-[145px] min-w-[80px] rounded backdrop-blur-[10px] hidden flex-col justify-center items-center gap-2 hover:border hover:border-purp">
+                            <p class="hourtime-2 border-b"></p>
+                            <img class="hourimg-2" src="" alt="" width="50" height="30">
+                            <h1 class="hourtemp-2 font-bold"></h1>
+                         </div>
+                         <div class="hour-3 h-[145px] min-w-[80px] rounded backdrop-blur-[10px] hidden flex-col justify-center items-center gap-2 hover:border hover:border-purp">
+                            <p class="hourtime-3 border-b"></p>
+                            <img class="hourimg-3" src="" alt="" width="50" height="30">
+                            <h1 class="hourtemp-3 font-bold"></h1>
+                         </div>
+                         <div class="hour-4 h-[145px] min-w-[80px] rounded backdrop-blur-[10px] hidden flex-col justify-center items-center gap-2 hover:border hover:border-purp">
+                            <p class="hourtime-4 border-b"></p>
+                            <img class="hourimg-4" src="" alt="" width="50" height="30">
+                            <h1 class="hourtemp-4 font-bold"></h1>
+                         </div>
+                         <div class="hour-5 h-[145px] min-w-[80px] rounded backdrop-blur-[10px] hidden flex-col justify-center items-center gap-2 hover:border hover:border-purp">
+                            <p class="hourtime-5 border-b"></p>
+                            <img class="hourimg-5" src="" alt="" width="50" height="30">
+                            <h1 class="hourtemp-5 font-bold"></h1>
+                         </div>
+                         <div class="hour-6 h-[145px] min-w-[80px] rounded backdrop-blur-[10px] hidden flex-col justify-center items-center gap-2 hover:border hover:border-purp">
+                            <p class="hourtime-6 border-b"></p>
+                            <img class="hourimg-6" src="" alt="" width="50" height="30">
+                            <h1 class="hourtemp-6 font-bold"></h1>
+                         </div>
+                         <div class="hour-7 h-[145px] min-w-[80px] rounded backdrop-blur-[10px] hidden flex-col justify-center items-center gap-2 hover:border hover:border-purp">
+                            <p class="hourtime-7 border-b"></p>
+                            <img class="hourimg-7" src="" alt="" width="50" height="30">
+                            <h1 class="hourtemp-7 font-bold"></h1>
+                         </div>
+                    </div>
+                </div>
+        </div>
+        <div class="main  bg-transparent filter backdrop-blur-[3px] md:backdrop-blur-[20px] felx flex-col items-center justify-center md:w-[320px] md:ml-auto md:border-l-[1px] md:border-purp">
+            <div class="top  border-b-[1px] flex flex-col items-center justify-around ml-3 mr-3">
+                <div class="location relative text-white">
+                    <input class="locationInput  mt-4 bg-transparent bor-white rounded pl-3 flex justify-center items-center text-yellow-400" type="text" placeholder="enter ur loacation" />
+                    <button class="submitLocation absolute right-[5px] top-[18px]"><img src="images\icons\upload.png" alt="" width="23" height="30"></button>
+                </div>
+                <div class="tempreture text-white text-5xl mt-10">
+                    <h1 class="temp"></h1>
+                 </div>
+                 <div class="description mt-5 mb-5">
+                    <p class="news text-white ml-2 mr-2 text-center"></p>
+                 </div>
+            </div>
+                
+            
+            <div class="bottom ">
+                <div class="heading">
+                    <div class="heading text-center mt-4">
+                        <p class="">Future Forecast</p>
+                    </div>
+                    <div class="future-cast   flex flex-col gap-5 mt-5 ml-5 pb-5 ts:ml-10 ts:mr-10 sm:ml-20 sm:mr-20 md:ml-4 md:mr-0 text-[12px]">
+                        <div class="flex gap-5  ml-1">
+                            <img class="img-0" src="" alt="" width="40" height="2">
+                            <div class="date">
+                                <p class="date-0"></p>
+                                <P class="condition-0"></P>
+                            </div>
+                            <div class="temp-difference ml-auto mr-5 border-l-[1px]">
+                                <p class="templow-0 ml-4"></p>
+                                <P class="temphigh-0 ml-[15px]"></P>
+                            </div>
+    
+                        </div>
+                        <div class="flex gap-5 ml-1">
+                            <img class="img-1" src="" alt="" width="40" height="2">
+                            <div class="date2">
+                                <p class="date-1"></p>
+                                <P class="condition-1"></P>
+                            </div>
+                            <div class="temp-difference ml-auto mr-5 border-l-[1px]">
+                                <p class="templow-1 ml-4"></p>
+                                <P class="temphigh-1 ml-[15px]"></P>
+                            </div>
+                        </div>
+                        <div class="flex gap-5  ml-1">
+                            <img class="img-2" src="" alt="" width="40" height="2">
+                            <div class="date3">
+                                <p class="date-2"></p>
+                                <P class="condition-2"></P>
+                            </div>
+                            <div class="temp-difference ml-auto mr-5 border-l-[1px]">
+                                <p class="templow-2 ml-4"></p>
+                                <P class="temphigh-2 ml-[15px]"></P>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 ml-1">
+                            <img class="img-3" src="" alt="" width="40" height="2">
+                            <div class="date4">
+                                <p class="date-3"></p>
+                                <P class="condition-3"></P>
+                            </div>
+                            <div class="temp-difference ml-auto mr-5 border-l-[1px]">
+                                <p class="templow-3 ml-4"></p>
+                                <P class="temphigh-3 ml-[15px]"></P>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 ml-1">
+                            <img class="img-4" src="" alt="" width="40" height="2">
+                            <div class="date5">
+                                <p class="date-4"></p>
+                                <P class="condition-4"></P>
+                            </div>
+                            <div class="temp-difference ml-auto mr-5 border-l-[1px]">
+                                <p class="templow-4 ml-4"></p>
+                                <P class="temphigh-4 ml-[15px]"></P>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                
+            </div>
+        </div>
+
+     </div>
+     
+    
+    
+
+    <script src="public/lone.js"></script>
+</body>
+</html>
