@@ -1,6 +1,6 @@
 
 const img = document.querySelector('img');
-const api_key = 'ZRJAUT48WAYRW5RCM4BTRENCK'
+const api_key = 'WQCKVETPEAR7TREKWEM8YS7GE'
 let city; 
 const date1 = '2025-03-04'; 
 const date2 = '2025-03-04'; 
